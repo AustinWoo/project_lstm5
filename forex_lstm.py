@@ -6,15 +6,17 @@ import datetime
 
 class Conf:
     # dataset conf
-    seq_len = 12
-    filename = '/Users/Austin.Woo/Downloads/ADB_export_adm_raw_export_h1_lstm_v1_part1.csv'
-    filename_test = '/Users/Austin.Woo/Downloads/ADB_export_adm_raw_export_h1_lstm_v1_part2.csv'
-    # fields = ['open', 'close', 'high', 'low', 'volume',	'macd_main', 'macd_signal', 'rsi', 'kdj_main', 'kdj_signal',  'adx_main', 'adx_plusdi', 'adx_minusdi',  'ma_18', 'ma_36', 'ma_56', 'mfi', 'sar', 'cci', 'wpr', 'boll_main', 'boll_upper', 'boll_lower', 'price_4avg', 'price_2avg']
-    fields = ['open', 'close', 'high', 'low']
+    seq_len = 72
+    # filename = '/Users/Austin.Woo/Downloads/ADB_export_adm_raw_export_h1_lstm_v1_part1.csv'
+    filename = '~/Desktop/forex_data/ADB_export_adm_raw_export_h1_lstm_v2_part1.csv'
+    # filename_test = '/Users/Austin.Woo/Downloads/ADB_export_adm_raw_export_h1_lstm_v1_part2.csv'
+    filename_test = '~/Desktop/forex_data/ADB_export_adm_raw_export_h1_lstm_v2_part2.csv'
+    fields = ['open', 'close', 'high', 'low', 'volume',	'macd_main', 'macd_signal', 'rsi', 'kdj_main', 'kdj_signal',  'adx_main', 'adx_plusdi', 'adx_minusdi',  'ma_18', 'ma_36', 'ma_56', 'mfi', 'sar', 'cci', 'wpr', 'boll_main', 'boll_upper', 'boll_lower', 'price_4avg', 'price_2avg']
+    # fields = ['open', 'close', 'high', 'low']
     shift = -1
     # model conf
     batch_size = 500
-    epochs = 10
+    epochs = 20
 
 
 if __name__ == '__main__':
